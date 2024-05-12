@@ -1,8 +1,8 @@
 # stimulus-lsp-intellij
 
 ![Build](https://github.com/kcdragon/stimulus-lsp-intellij/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
+[![Version](https://img.shields.io/jetbrains/plugin/v/com.github.kcdragon.stimuluslspintellij.svg)](https://plugins.jetbrains.com/plugin/com.github.kcdragon.stimuluslspintellij)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/com.github.kcdragon.stimuluslspintellij.svg)](https://plugins.jetbrains.com/plugin/com.github.kcdragon.stimuluslspintellij)
 
 ## Template ToDo list
 - [x] Create a new [IntelliJ Platform Plugin Template][template] project.
@@ -17,14 +17,23 @@
 - [ ] Click the <kbd>Watch</kbd> button on the top of the [IntelliJ Platform Plugin Template][template] to be notified about releases containing new features and fixes.
 
 <!-- Plugin description -->
-This Fancy IntelliJ Platform Plugin is going to be your implementation of the brilliant ideas that you have.
+This plugin is a simple wrapper around [Stimulus LSP](https://github.com/marcoroth/stimulus-lsp) by [Marco Roth](https://github.com/marcoroth).
 
-This specific section is a source for the [plugin.xml](/src/main/resources/META-INF/plugin.xml) file which will be extracted by the [Gradle](/build.gradle.kts) during the build process.
+Install the Stimulus Language Server
+  
+```shell
+yarn global add stimulus-language-server
+```
 
-To keep everything working, do not remove `<!-- ... -->` sections. 
+Ensure that `stimulus-language-server` is on your `PATH`
 <!-- Plugin description end -->
 
 ## Installation
+
+- Install the Stimulus Language Server and ensure that `stimulus-language-server` is on your PATH 
+  ```shell
+  yarn global add stimulus-language-server
+  ```
 
 - Using the IDE built-in plugin system:
   
